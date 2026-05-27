@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI图片去水印工具</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI图片去水印工具</h1>
+        <p class="subtitle">基于LaMa深度学习模型，一键去除图片水印</p>
+
+        <div class="upload-section">
+            <div class="upload-box" id="imageUpload">
+                <p>点击或拖拽上传原始图片</p>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div class="controls">
+                <button id="clearBtn">清除画笔</button>
+                <button id="undoBtn">撤销</button>
+                <button id="processBtn" disabled>开始去除水印</button>
+            </div>
+        </div>
+
+        <div class="result-section" id="resultSection" style="display: none;">
+            <h2>处理结果</h2>
+            <div class="result-images">
+                <div>
+                    <h3>原图</h3>
+                    <img id="originalImage" alt="原图">
+                </div>
+                <div>
+                    <h3>修复后</h3>
+                    <img id="resultImage" alt="修复后">
+                </div>
+            </div>
+            <a id="downloadBtn" class="download-btn" download="cleaned.png">下载图片</a>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

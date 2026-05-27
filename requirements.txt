@@ -1,0 +1,18 @@
+# 深度学习
+torch>=2.0.0
+
+# 图像处理
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Web与命令行
+fastapi>=0.100.0
+uvicorn>=0.23.2
+click>=8.1.0
+tqdm>=4.65.0
+python-multipart>=0.0.6
+requests>=2.31.0
+
+# 工具
+python-dotenv>=1.0.0
